@@ -1,12 +1,11 @@
 import javax.swing.*;
-import java.awt.*;
 
-public class HospitalApp extends JFrame {
+public class HospitalApp1 extends JFrame {
     private PatientDAO patientDAO = new PatientDAO();
     private DoctorDAO doctorDAO = new DoctorDAO();
     private AppointmentDAO appointmentDAO = new AppointmentDAO();
 
-    public HospitalApp() {
+    public HospitalApp1() {
         setTitle("🏥 Hospital Management System");
         setSize(900, 700);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -20,6 +19,6 @@ public class HospitalApp extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new HospitalApp().setVisible(true));
+        SwingUtilities.invokeLater(() -> new HospitalApp1().setVisible(true));
     }
 }
